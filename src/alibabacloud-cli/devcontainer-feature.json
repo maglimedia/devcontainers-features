@@ -1,0 +1,27 @@
+{
+    "id": "alibabacloud-cli",
+    "version": "1.0.5",
+    "name": "Alibaba Cloud CLI",
+    "documentationURL": "https://github.com/maglimedia/devcontainers-features/tree/main/src/alibabacloud-cli",
+    "description": "Installs the Alibaba Cloud CLI along with needed dependencies. Useful for base Dockerfiles that often are missing required install dependencies like gpg.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter an Alibaba Cloud CLI version."
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
